@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-16 07:35:25 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTE2OzA3OjI2OjI5IMOWUzsxOTk5"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTExLTE2OzA3OjM1OjI1IMOWUzsxOzIxMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="m"/>
+            <declare name="toplam" type="Real" array="False" size=""/>
+            <assign variable="toplam" expression="n+m"/>
+            <output expression="toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

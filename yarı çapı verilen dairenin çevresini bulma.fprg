@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-17 12:08:38 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTE2OzExOjI3OjA1IMOWUzsxOTg5"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTExLTE3OzEyOjA4OjM4IMOWw5Y7MTsyMjM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p" type="Real" array="False" size=""/>
+            <assign variable="p" expression="3.14"/>
+            <declare name="r" type="Real" array="False" size=""/>
+            <input variable="r"/>
+            <declare name="&#231;evre" type="Real" array="False" size=""/>
+            <assign variable="&#231;evre" expression="2*p*r"/>
+            <output expression="&#231;evre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
