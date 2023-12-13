@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-10 09:11:45 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTI0OzAxOjQ4OjIwIMOWUzsxOTg3"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTEwOzA5OjExOjQ1IMOWUzszOzIwOTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;bir say&#305; giriniz:&quot;" newline="True"/>
+            <declare name="n, m, l" type="Integer" array="False" size=""/>
+            <input variable="l"/>
+            <assign variable="n" expression="1"/>
+            <while expression="n&lt;=12">
+                <assign variable="m" expression="n*l"/>
+                <output expression="l &amp;&quot;x&quot; &amp;n &amp; &quot;=&quot; &amp;m" newline="True"/>
+                <assign variable="n" expression="n+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

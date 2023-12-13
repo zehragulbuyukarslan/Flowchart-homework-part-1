@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-10 11:08:58 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTEwOzEwOjAxOjQ1IMOWUzsxOTc5"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTEwOzExOjA4OjU4IMOWUzsyOzIxMDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, m, t" type="Integer" array="False" size=""/>
+            <output expression="&quot;bir say&#305; giriniz:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <assign variable="n2" expression="n1"/>
+            <assign variable="m" expression="1"/>
+            <while expression="n1&gt;0">
+                <assign variable="n1" expression="n1/10"/>
+                <assign variable="m" expression="m*10"/>
+            </while>
+            <assign variable="m" expression="m/10"/>
+            <assign variable="t" expression="n2/m"/>
+            <output expression="(n2-t*m)+(n2%10)*m -(n2%10)+t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

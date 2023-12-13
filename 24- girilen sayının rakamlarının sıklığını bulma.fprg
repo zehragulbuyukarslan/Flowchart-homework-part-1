@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-13 12:57:24 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTEzOzEyOjM1OjQxIMOWw5Y7MjExOA=="/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTEzOzEyOjU3OjI0IMOWw5Y7MTsyMjMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;bir tamsay&#305; giriniz:&quot;" newline="True"/>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <output expression="&quot;s&#305;kl&#305;&#287;&#305;n&#305; bulmak istedi&#287;iniz rakam&#305; giriniz:&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="d" expression="0"/>
+            <if expression="(a==0)&amp;&amp;(b==0)">
+                <then>
+                    <output expression="b&amp;&quot; say&#305;s&#305;n&#305;n s&#305;kl&#305;&#287;&#305;: &quot;&amp;&quot;1&quot;" newline="True"/>
+                </then>
+                <else>
+                    <while expression="a&gt;0">
+                        <assign variable="c" expression="a%10"/>
+                        <assign variable="a" expression="a/10"/>
+                        <if expression="c==b">
+                            <then>
+                                <assign variable="d" expression="d+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </while>
+                    <output expression="b&amp;&quot; say&#305;s&#305;n&#305;n s&#305;kl&#305;&#287;&#305;: &quot;&amp;d" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

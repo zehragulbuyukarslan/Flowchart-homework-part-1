@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-11 11:02:06 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTExOzEwOjQ0OjQ3IMOWUzsxOTg5"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTExOzExOjAyOjA2IMOWUzsxOzIwODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="as&#305;l, b, ters, d" type="Integer" array="False" size=""/>
+            <input variable="as&#305;l"/>
+            <assign variable="b" expression="as&#305;l"/>
+            <assign variable="d" expression="as&#305;l"/>
+            <assign variable="ters" expression="0"/>
+            <while expression="d&gt;0">
+                <assign variable="b" expression="d"/>
+                <assign variable="b" expression="b%10"/>
+                <assign variable="ters" expression="ters*10+b"/>
+                <assign variable="d" expression="d/10"/>
+            </while>
+            <if expression="ters==as&#305;l">
+                <then>
+                    <output expression="&quot;say&#305; polindrom&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;say&#305; polindrom de&#287;il&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

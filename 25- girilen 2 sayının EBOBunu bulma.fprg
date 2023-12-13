@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-11 01:28:04 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTExOzAxOjE3OjA2IMOWUzsxOTg0"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTExOzAxOjI4OjA0IMOWUzsxOzIwOTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, e, sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <output expression="&quot;birinci say&#305;y&#305; giriniz:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;ikinci say&#305;y&#305; giriniz:&quot;" newline="True"/>
+            <input variable="b"/>
+            <while expression="a&gt;=sayac">
+                <assign variable="c" expression="a%sayac"/>
+                <assign variable="d" expression="b%sayac"/>
+                <if expression="(c==0)&amp;&amp;(d==0)">
+                    <then>
+                        <assign variable="e" expression="sayac"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+            </while>
+            <output expression="&quot;say&#305;lar&#305;n EBOB'u: &quot; &amp; e" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

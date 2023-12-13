@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-24 10:38:07 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTE1OzA2OjA3OjQ0IMOWUzsxOTkz"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTExLTI0OzEwOjM4OjA3IMOWw5Y7NDsyMjMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, s, f" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="f" expression="1"/>
+            <assign variable="s" expression="0"/>
+            <while expression="s&lt;n">
+                <assign variable="s" expression="s+1"/>
+                <assign variable="f" expression="f*s"/>
+            </while>
+            <if expression="n&lt;0">
+                <then>
+                    <output expression="&quot;hatal&#305; say&#305; girdiniz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="f" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
