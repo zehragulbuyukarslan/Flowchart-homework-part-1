@@ -1,2 +1,2 @@
-# odev
-akış şemaları part-1
+# odev soruları part-1
+
