@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-22 09:58:30 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTIyOzA5OjM3OjMxIMOWUzsxOTkz"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTExLTIyOzA5OjU4OjMwIMOWUzsxOzIxMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, sayac, toplam, carp&#305;m" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="carp&#305;m" expression="1"/>
+            <while expression="sayac&lt;11">
+                <input variable="n"/>
+                <assign variable="sayac" expression="sayac+1"/>
+                <assign variable="carp&#305;m" expression="carp&#305;m*n"/>
+                <assign variable="toplam" expression="toplam+n"/>
+            </while>
+            <output expression="toplam" newline="True"/>
+            <output expression="carp&#305;m" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

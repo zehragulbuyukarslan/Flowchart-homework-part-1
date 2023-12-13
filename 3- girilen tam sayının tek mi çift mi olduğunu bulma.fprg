@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-17 12:35:02 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTE3OzEyOjA4OjQ1IMOWw5Y7MjEyNQ=="/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTExLTE3OzEyOjM1OjAyIMOWw5Y7MTsyMjI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <if expression="n&lt;0">
+                <then>
+                    <assign variable="n" expression="-1*n"/>
+                    <if expression="n%2=0">
+                        <then>
+                            <output expression="&quot;say&#305; &#231;ifttir&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;say&#305; tektir&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="n%2=0">
+                        <then>
+                            <output expression="&quot;say&#305; &#231;ifttir&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;say&#305; tektir&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

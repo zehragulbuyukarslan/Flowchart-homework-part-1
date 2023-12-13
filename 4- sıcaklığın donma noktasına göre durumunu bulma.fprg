@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-24 08:42:07 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTE3OzEyOjM1OjI0IMOWw5Y7MjEyMg=="/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTExLTI0OzA4OjQyOjA3IMOWw5Y7MjsyMjMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s&#305;cakl&#305;k" type="Integer" array="False" size=""/>
+            <input variable="s&#305;cakl&#305;k"/>
+            <if expression="s&#305;cakl&#305;k==0">
+                <then>
+                    <output expression="&quot;s&#305;cakl&#305;k donma noktas&#305;ndad&#305;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="s&#305;cakl&#305;k&lt;0">
+                        <then>
+                            <output expression="&quot;s&#305;cakl&#305;k donma noktas&#305;ndan d&#252;&#351;&#252;kt&#252;r&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;s&#305;cakl&#305;k donma noktas&#305;ndan y&#252;ksektir&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

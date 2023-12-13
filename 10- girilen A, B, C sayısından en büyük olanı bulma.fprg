@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-24 09:59:37 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTIyOzA5OjAwOjMzIMOWUzsxOTg1"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTExLTI0OzA5OjU5OjM3IMOWw5Y7MjsyMjQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <if expression="(A==B)&amp;&amp;(B==C)">
+                <then>
+                    <output expression="&quot;A, B ve C say&#305;lar&#305; birbirine e&#351;ittir&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="A&gt;B">
+                        <then>
+                            <if expression="A&gt;C">
+                                <then>
+                                    <output expression="&quot;A en b&#252;y&#252;k say&#305;&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="A==C">
+                                        <then>
+                                            <output expression="&quot;A ve C en b&#252;y&#252;k say&#305;lar&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;C en b&#252;y&#252;k say&#305;&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="B&gt;C">
+                                <then>
+                                    <if expression="A==B">
+                                        <then>
+                                            <output expression="&quot;A  ve B en b&#252;y&#252;k say&#305;lar&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;B en b&#252;y&#252;k say&#305;&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="B==C">
+                                        <then>
+                                            <output expression="&quot;B ve C en b&#252;y&#252;k say&#305;lar&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;C en b&#252;y&#252;k say&#305;&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-24 12:04:10 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTI0OzExOjQ0OjEyIMOWw5Y7MjExNg=="/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTExLTI0OzEyOjA0OjEwIMOWUzsyOzIwODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="low, high, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="low"/>
+            <input variable="high"/>
+            <while expression="low&lt;=high">
+                <if expression="(low%n)==0">
+                    <then>
+                        <output expression="low" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="low" expression="low+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

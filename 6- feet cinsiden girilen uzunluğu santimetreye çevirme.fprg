@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-24 11:18:16 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTIyOzA4OjQ1OjEyIMOWUzsxOTkw"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTExLTI0OzExOjE4OjE2IMOWw5Y7MzsyMjMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="feet, cm" type="Real" array="False" size=""/>
+            <input variable="feet"/>
+            <while expression="feet&gt;=0">
+                <assign variable="cm" expression="feet*30.48"/>
+                <output expression="cm" newline="True"/>
+                <input variable="feet"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

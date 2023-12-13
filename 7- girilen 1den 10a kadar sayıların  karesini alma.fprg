@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-24 09:03:32 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTExLTIxOzA3OjMyOjI3IMOWUzsxOTkw"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTExLTI0OzA5OjAzOjMyIMOWw5Y7MjsyMjI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, s" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <if expression="(n&lt;1)||(n&gt;10)">
+                <then/>
+                <else>
+                    <assign variable="s" expression="n*n"/>
+                    <output expression="s" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
