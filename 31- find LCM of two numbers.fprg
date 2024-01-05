@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-25 11:28:59 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI1OzExOjE1OjQ1IMOWUzsxOTkx"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI1OzExOjI4OjU5IMOWUzsxOzIxMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter 1st number:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter 2nd number:&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="i" expression="a"/>
+            <while expression="i&lt;=(a*b)">
+                <if expression="(i%a==0)&amp;&amp;(i%b==0)">
+                    <then>
+                        <output expression="&quot;LCM (leat common multiple of) &quot; &amp;a &amp;&quot; and &quot; &amp;b &amp;&quot; numbers: &quot; &amp;i" newline="True"/>
+                        <assign variable="i" expression="99999999999999"/>
+                    </then>
+                    <else>
+                        <assign variable="i" expression="i+1"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

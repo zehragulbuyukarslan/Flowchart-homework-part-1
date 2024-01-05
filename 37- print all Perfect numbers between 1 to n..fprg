@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-27 01:27:07 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI2OzExOjE4OjUwIMOWUzsxOTkx"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI3OzAxOjI3OjA3IMOWw5Y7MzsyMjM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, n, i, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number&quot;" newline="True"/>
+            <input variable="A"/>
+            <assign variable="n" expression="6"/>
+            <while expression="n&lt;=A">
+                <assign variable="i" expression="1"/>
+                <assign variable="sum" expression="0"/>
+                <while expression="i&lt;n">
+                    <if expression="n%i==0">
+                        <then>
+                            <assign variable="sum" expression="sum+i"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="i" expression="i+1"/>
+                </while>
+                <if expression="(n!=0)&amp;&amp;(n==sum)">
+                    <then>
+                        <output expression="n" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="n" expression="n+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-25 10:11:08 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI1OzA5OjM3OjAxIMOWUzsxOTk0"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI1OzEwOjExOjA4IMOWUzsyOzIwOTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d" type="Real" array="False" size=""/>
+            <output expression="&quot;enter the 1st side of rectangle:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter the 2nd side of rectange&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="(a&lt;0)||(b&lt;0)">
+                <then>
+                    <output expression="&quot;you entered wrong values&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="c" expression="a*b"/>
+                    <assign variable="d" expression="2*(a+b)"/>
+                    <output expression="&quot;Area of rectangle:&quot; &amp;c" newline="True"/>
+                    <output expression="&quot;Perimeter of rectangle:&quot; &amp;d" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

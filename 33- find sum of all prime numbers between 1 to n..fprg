@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-26 12:40:53 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI2OzEyOjM0OjI1IMOWw5Y7MjEyMw=="/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI2OzEyOjM1OjM0IMOWw5Y7MTt6aGc7WkhSOzIwMjMtMTItMjU7MTE6MzI6Mzkgw5ZTOzA3LSBwcmludCBwcmltZSBudW1iZXJzIGJldHdlZW4gMSB0byBuLmZwcmc7ODE4Ng=="/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI2OzEyOjQwOjUzIMOWw5Y7MTsyMjI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, ii, sum" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="sum" expression="2"/>
+            <assign variable="ii" expression="2"/>
+            <assign variable="i" expression="2"/>
+            <while expression="i&lt;=n">
+                <while expression="ii&lt;i">
+                    <if expression="i%ii==0">
+                        <then>
+                            <assign variable="ii" expression="99999999999999"/>
+                        </then>
+                        <else>
+                            <assign variable="ii" expression="ii+1"/>
+                        </else>
+                    </if>
+                    <if expression="ii==i">
+                        <then>
+                            <assign variable="sum" expression="sum+i"/>
+                        </then>
+                        <else/>
+                    </if>
+                </while>
+                <assign variable="i" expression="i+1"/>
+                <assign variable="ii" expression="2"/>
+            </while>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

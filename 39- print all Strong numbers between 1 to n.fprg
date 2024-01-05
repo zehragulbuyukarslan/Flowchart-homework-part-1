@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-27 08:31:52 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI3OzA4OjA3OjAzIMOWUzsxOTk0"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI3OzA4OjMxOjUyIMOWUzsxOzIxMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, aa, s, sum, fac" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="a" expression="1"/>
+            <while expression="a&lt;=n">
+                <assign variable="sum" expression="0"/>
+                <assign variable="aa" expression="a"/>
+                <while expression="a&gt;0">
+                    <assign variable="fac" expression="1"/>
+                    <assign variable="s" expression="a%10"/>
+                    <assign variable="a" expression="a/10"/>
+                    <while expression="s&gt;0">
+                        <assign variable="fac" expression="fac*s"/>
+                        <assign variable="s" expression="s-1"/>
+                    </while>
+                    <assign variable="sum" expression="sum+fac"/>
+                </while>
+                <if expression="sum==aa">
+                    <then>
+                        <output expression="aa" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="a" expression="aa"/>
+                <assign variable="a" expression="a+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-25 10:07:15 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI1OzA5OjUwOjM2IMOWUzsxOTk3"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI1OzEwOjA3OjE1IMOWUzsxOzIwOTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, root1, root2" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the 1st coefficient:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter the 2nd coefficient:&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;enter the 3rd coefficient:&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="root1" expression="(-b+(b*b-4*a*c)*(1/2))/2*a"/>
+            <assign variable="root2" expression="(-b-(b*b-4*a*c)*(1/2))/2*a"/>
+            <output expression="&quot;1st root: &quot; &amp;root1" newline="True"/>
+            <output expression="&quot;2ndd root: &quot; &amp;root2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

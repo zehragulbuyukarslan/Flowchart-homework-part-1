@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-26 11:41:50 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI2OzExOjE4OjUwIMOWUzsxOTkx"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI2OzExOjQxOjUwIMOWUzsyOzIwOTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="i&lt;n">
+                <if expression="n%i==0">
+                    <then>
+                        <assign variable="sum" expression="sum+i"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <if expression="(n!=0)&amp;&amp;(n==sum)">
+                <then>
+                    <output expression="&quot;it is a PERFECT NUMBER&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;it is NOT a PERFECT NUMBER&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

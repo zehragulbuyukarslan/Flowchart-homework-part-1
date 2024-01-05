@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-27 08:06:34 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI3OzA3OjI3OjMzIMOWUzsxOTk4"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI3OzA4OjA2OjM0IMOWUzsxOzIxMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, nn, s, sum, fac" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="nn" expression="n"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="n&gt;0">
+                <assign variable="fac" expression="1"/>
+                <assign variable="s" expression="n%10"/>
+                <assign variable="n" expression="n/10"/>
+                <while expression="s&gt;0">
+                    <assign variable="fac" expression="fac*s"/>
+                    <assign variable="s" expression="s-1"/>
+                </while>
+                <assign variable="sum" expression="sum+fac"/>
+            </while>
+            <if expression="(sum==nn)&amp;&amp;(nn!=0)">
+                <then>
+                    <output expression="&quot;it is a STRONG number!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;it is NOT a STRONG number!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

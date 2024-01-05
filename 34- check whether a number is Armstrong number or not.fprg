@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-26 09:43:16 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI2OzA5OjIwOjA3IMOWUzsxOTkz"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI2OzA5OjQzOjE2IMOWUzsyOzIxMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m, i, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="m" expression="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="n&gt;0">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="n" expression="n/10"/>
+            </while>
+            <assign variable="n" expression="m"/>
+            <while expression="n&gt;0">
+                <assign variable="sum" expression="sum+(n%10)^i"/>
+                <assign variable="n" expression="n/10"/>
+            </while>
+            <if expression="sum==m">
+                <then>
+                    <output expression="&quot;it is a ARMSTRONG NUMBER!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;it is NOT a ARMSTRONG NUMBER!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

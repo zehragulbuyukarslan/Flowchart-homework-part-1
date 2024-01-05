@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-28 12:04:28 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI1OzEwOjU2OjE5IMOWUzsxOTk2"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI4OzEyOjA0OjI4IMOWw5Y7MzsyMjM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;the sum of the first 50 natural numbers:&quot;" newline="True"/>
+            <declare name="a, sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <for variable="a" start="1" end="50" direction="inc" step="1">
+                <assign variable="sum" expression="sum+a"/>
+            </for>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

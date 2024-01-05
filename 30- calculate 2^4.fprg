@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-25 11:13:49 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI1OzExOjAwOjI0IMOWUzsxOTgy"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI1OzExOjEzOjQ5IMOWUzsyOzIxMDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;result of 2^4&quot;" newline="True"/>
+            <declare name="res, i" type="Integer" array="False" size=""/>
+            <assign variable="res" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=4">
+                <assign variable="res" expression="res*2"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="res" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
