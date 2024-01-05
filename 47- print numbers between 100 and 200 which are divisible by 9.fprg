@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-05 12:22:32 &#214;&#214;"/>
+        <attribute name="created" value="emhnO1pIUjsyMDI0LTAxLTA0OzExOjM2OjU0IMOWUzsxOTkw"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDI0LTAxLTA1OzEyOjIyOjMyIMOWw5Y7MTsyMjIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="numbers between 100 and 200 which are divisible by 9"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="108"/>
+            <while expression="a&lt;200">
+                <output expression="a" newline="True"/>
+                <assign variable="a" expression="a+9"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

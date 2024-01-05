@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-05 05:05:06 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDI0LTAxLTA1OzA0OjEyOjI0IMOWUzsxOTg0"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDI0LTAxLTA1OzA1OjA1OjA2IMOWUzsyOzIwOTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Convert a binary number into a decimal number without using array, function and while loop."/>
+            <declare name="b, bb, d, i" type="Integer" array="False" size=""/>
+            <comment text="prompt the user for input"/>
+            <output expression="&quot;enter a binary number:&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="store a copy of the original binary number"/>
+            <assign variable="d" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <comment text="for loop to convert binary into decimal"/>
+            <for variable="bb" start="b" end="1" direction="dec" step="1">
+                <if expression="bb%2==1">
+                    <then>
+                        <assign variable="d" expression="d+(2^i)"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+                <assign variable="bb" expression="(bb/10)+1"/>
+            </for>
+            <comment text="print the result"/>
+            <output expression="b&amp;&quot;'s decimal version: &quot;&amp;d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

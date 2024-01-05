@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-05 03:52:57 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDI0LTAxLTA1OzEyOjI0OjI5IMOWw5Y7MjEyMg=="/>
+        <attribute name="edited" value="emhnO1pIUjsyMDI0LTAxLTA1OzAzOjUyOjU3IMOWUzsyOzIxMDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="convert a decimal number into binary without using an array"/>
+            <declare name="n, b, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a decimal number:&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;binary of &quot;&amp;n &amp;&quot;:   &quot;" newline="False"/>
+            <assign variable="b" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <while expression="n&gt;0">
+                <assign variable="b" expression="b+(n%2)*10^i"/>
+                <assign variable="n" expression="n/2"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="b" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-27 11:29:33 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI3OzExOjE3OjMzIMOWUzsxOTky"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI3OzExOjI5OjMzIMOWUzsyOzIxMDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, sum" type="Real" array="False" size=""/>
+            <output expression="&quot;SUM OF (1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n) SERIE&quot;" newline="True"/>
+            <output expression="&quot;enter a number:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="i&lt;=n">
+                <assign variable="sum" expression="sum+1/i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

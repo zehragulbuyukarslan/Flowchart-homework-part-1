@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-27 08:39:47 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI3OzA4OjMyOjUwIMOWUzsxOTk0"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI3OzA4OjM5OjQ3IMOWUzsyOzIxMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, nn, reverse" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="nn" expression="n"/>
+            <assign variable="reverse" expression="0"/>
+            <while expression="n&gt;0">
+                <assign variable="reverse" expression="reverse*10+n%10"/>
+                <assign variable="n" expression="n/10"/>
+            </while>
+            <if expression="nn==reverse">
+                <then>
+                    <output expression="&quot;it is a POLINDROME!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;it is NOT a polindrome!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

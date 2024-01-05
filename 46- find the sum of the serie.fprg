@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-04 11:36:49 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDI0LTAxLTA0OzExOjI1OjEyIMOWUzsxOTgy"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDI0LTAxLTA0OzExOjM2OjQ5IMOWUzsxOzIxMDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="find the sum of the series 1 +11 + 111 + 1111 + .. n terms"/>
+            <declare name="n, i, term, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the amount of the terms: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="term" expression="0"/>
+            <while expression="i&lt;n">
+                <assign variable="term" expression="term+10^i"/>
+                <assign variable="sum" expression="sum+term"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;sum of the serie: &quot; &amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-05 09:13:02 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDI0LTAxLTA1OzA1OjEwOjMyIMOWUzsxOTgy"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDI0LTAxLTA1OzA5OjEzOjAyIMOWUzs2OzIwOTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="print Pascal triangle upto n rows"/>
+            <declare name="n, i, ii" type="Integer" array="False" size=""/>
+            <declare name="arr1, arr2" type="Integer" array="True" size="500"/>
+            <comment text="prompt the user for input"/>
+            <output expression="&quot;enter the row amount:&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;PASCAL TRIANGELE&quot;" newline="True"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;n">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="ii" expression="1"/>
+                <output expression="&quot;&quot;" newline="True"/>
+                <while expression="ii&lt;=i">
+                    <if expression="(ii==1)||(ii==i)">
+                        <then>
+                            <assign variable="arr1[ii]" expression="1"/>
+                            <output expression="arr1[ii]&amp;&quot;,  &quot;" newline="False"/>
+                        </then>
+                        <else>
+                            <assign variable="arr1[ii]" expression="arr2[ii-1]+arr2[ii]"/>
+                            <output expression="arr1[ii]&amp;&quot;,  &quot;" newline="False"/>
+                        </else>
+                    </if>
+                    <assign variable="ii" expression="ii+1"/>
+                </while>
+                <assign variable="i" expression="i+1"/>
+                <if expression="i&lt;=n">
+                    <then>
+                        <assign variable="ii" expression="1"/>
+                        <output expression="&quot;&quot;" newline="True"/>
+                        <while expression="ii&lt;=i">
+                            <if expression="(ii==1)||(ii==i)">
+                                <then>
+                                    <assign variable="arr2[ii]" expression="1"/>
+                                    <output expression="arr2[ii]&amp;&quot;,  &quot;" newline="False"/>
+                                </then>
+                                <else>
+                                    <assign variable="arr2[ii]" expression="arr1[ii-1]+arr1[ii]"/>
+                                    <output expression="arr2[ii]&amp;&quot;,  &quot;" newline="False"/>
+                                </else>
+                            </if>
+                            <assign variable="ii" expression="ii+1"/>
+                        </while>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-04 08:30:33 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDI0LTAxLTA0OzA3OjU5OjU2IMOWUzsyMDAy"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDI0LTAxLTA0OzA4OjMwOjMzIMOWUzsyOzIwOTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="1+x+x^2/2!+x^3/3!+... result of this serie"/>
+            <declare name="x, l, i, ii, f" type="Integer" array="False" size=""/>
+            <declare name="a, sum" type="Real" array="False" size=""/>
+            <output expression="&quot;enter the value of x:&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;enter the length of the serie:&quot;" newline="True"/>
+            <input variable="l"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="sum" expression="1"/>
+            <while expression="i&lt;l">
+                <assign variable="f" expression="1"/>
+                <assign variable="i" expression="i+1"/>
+                <assign variable="ii" expression="i"/>
+                <while expression="ii&gt;=1">
+                    <assign variable="f" expression="f*ii"/>
+                    <assign variable="ii" expression="ii-1"/>
+                </while>
+                <assign variable="a" expression="x^i/f"/>
+                <assign variable="sum" expression="sum+a"/>
+            </while>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

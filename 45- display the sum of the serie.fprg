@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-04 11:24:10 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDI0LTAxLTA0OzEwOjE4OjQ5IMOWUzsxOTkz"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDI0LTAxLTA0OzExOjI0OjEwIMOWUzsxOzIwODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="find the sum of the series [ x - x^3 + x^5 + ......]."/>
+            <declare name="x, l, i, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of x:&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;enter the length of the serie:&quot;" newline="True"/>
+            <input variable="l"/>
+            <if expression="l&gt;0&amp;&amp;l&lt;3">
+                <then>
+                    <assign variable="sum" expression="x"/>
+                </then>
+                <else>
+                    <assign variable="sum" expression="x-x^3"/>
+                </else>
+            </if>
+            <assign variable="i" expression="5"/>
+            <while expression="i&lt;=l">
+                <assign variable="sum" expression="sum+x^i"/>
+                <assign variable="i" expression="i+2"/>
+            </while>
+            <output expression="&quot;sum of the seri:  &quot;" newline="False"/>
+            <output expression="sum" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

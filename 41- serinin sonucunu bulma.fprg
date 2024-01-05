@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-27 11:10:42 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI3OzA5OjMyOjM1IMOWUzsxOTk4"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDIzLTEyLTI3OzExOjEwOjQyIMOWUzsyOzIwOTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, l, i, ii, fac" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <output expression="&quot;[ 1-X^2/2!+X^4/4!- .........] SUM OF THE SER&#304;E:&quot;" newline="True"/>
+            <output expression="&quot;enter the x value:&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;enter an even number for the length of the serie:&quot;" newline="True"/>
+            <input variable="l"/>
+            <if expression="l%2==0">
+                <then>
+                    <assign variable="i" expression="2"/>
+                    <assign variable="sum" expression="1"/>
+                    <while expression="i&lt;=l">
+                        <assign variable="ii" expression="i"/>
+                        <assign variable="fac" expression="1"/>
+                        <while expression="ii&gt;0">
+                            <assign variable="fac" expression="fac*ii"/>
+                            <assign variable="ii" expression="ii-1"/>
+                        </while>
+                        <assign variable="sum" expression="sum-(x^i)/fac"/>
+                        <assign variable="i" expression="i+2"/>
+                        <assign variable="ii" expression="i"/>
+                        <assign variable="fac" expression="1"/>
+                        <while expression="ii&gt;0">
+                            <assign variable="fac" expression="fac*ii"/>
+                            <assign variable="ii" expression="ii-1"/>
+                        </while>
+                        <assign variable="sum" expression="sum+(x^i)/fac"/>
+                        <assign variable="i" expression="i+2"/>
+                    </while>
+                    <if expression="(i-l)==2">
+                        <then>
+                            <output expression="sum" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="i" expression="i-2"/>
+                            <assign variable="sum" expression="sum-(x^i)/fac"/>
+                            <output expression="sum" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;you entered wrong value!!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

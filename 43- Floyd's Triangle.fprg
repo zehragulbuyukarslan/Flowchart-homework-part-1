@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-04 11:06:13 &#214;S"/>
+        <attribute name="created" value="emhnO1pIUjsyMDIzLTEyLTI3OzExOjI5OjQ1IMOWUzsxOTk4"/>
+        <attribute name="edited" value="emhnO1pIUjsyMDI0LTAxLTA0OzExOjA2OjEzIMOWUzs1OzIwOTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l, i, ii" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the line amount:&quot;" newline="True"/>
+            <input variable="l"/>
+            <output expression="&quot;FLOYD'S TRIANGLE&quot;" newline="True"/>
+            <assign variable="i" expression="1"/>
+            <output expression="1" newline="False"/>
+            <while expression="i&lt;l">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="ii" expression="0"/>
+                <output expression="&quot;&quot;" newline="True"/>
+                <if expression="i%2==1">
+                    <then>
+                        <while expression="ii&lt;i">
+                            <output expression="&quot;  &quot;&amp;1&amp;&quot;  &quot;" newline="False"/>
+                            <assign variable="ii" expression="ii+1"/>
+                            <if expression="ii&lt;i">
+                                <then>
+                                    <output expression="&quot;  &quot;&amp;0&amp;&quot;  &quot;" newline="False"/>
+                                    <assign variable="ii" expression="ii+1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </while>
+                    </then>
+                    <else>
+                        <while expression="ii&lt;i">
+                            <output expression="&quot;  &quot;&amp;0&amp;&quot;  &quot;" newline="False"/>
+                            <assign variable="ii" expression="ii+1"/>
+                            <if expression="ii&lt;i">
+                                <then>
+                                    <output expression="&quot;  &quot;&amp;1&amp;&quot;  &quot;" newline="False"/>
+                                    <assign variable="ii" expression="ii+1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </while>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
